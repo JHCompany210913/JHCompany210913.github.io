@@ -615,6 +615,13 @@
                 bottom: 90px;
             }
 
+            contact-what-we-do img {
+                width: 15px;
+                position: relative;
+                left: -6px;
+                top: 9px;
+            }
+
             #title-title-nokoko {
                 font-size: 24px;
             }
@@ -847,10 +854,10 @@
         }
 
         $(document).ready(function () {
-            html_var.animate({scrollTop: 0}, 10);
             AOS.init();
 
             var html_var = $("html, body");
+            html_var.animate({scrollTop: 0}, 10);
             var page = 1;
             var lastPage = $(".content").length;
 

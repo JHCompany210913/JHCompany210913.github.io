@@ -847,12 +847,12 @@
         }
 
         $(document).ready(function () {
+            html_var.animate({scrollTop: 0}, 10);
             AOS.init();
 
             var html_var = $("html, body");
             var page = 1;
             var lastPage = $(".content").length;
-            html_var.animate({scrollTop: 0}, 10);
 
             $(window).on("wheel", function (e) {
                 if (html_var.is(":animated")) {
